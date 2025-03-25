@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="CSS/register.css">
+    <link rel="stylesheet" href="CSS/navbarfooterstyles.css">
+    <script defer src="Java Scripts/register.js"></script>
+    <script src="Java Scripts/navbarfooterscripts.js"></script> 
+    <script src="Java Scripts/navbar.js"></script> 
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main>
+        <form id="registerForm">
+            <h2>Register</h2>
+
+            <div class="form-sections">
+                <!-- Section 1: Personal Details -->
+                <div class="section">
+                    <h3>Personal Details</h3>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label>Mobile No.</label>
+                    <div class="mobile-input">
+                        <select id="countryCode">
+                            <option value="+91">+91 (India)</option>
+                            <option value="+1">+1 (USA)</option>
+                            <option value="+44">+44 (UK)</option>
+                        </select>
+                        <input type="text" id="mobile" maxlength="10" required>
+                    </div>
+                </div>
+
+                <!-- Section 2: Address -->
+                <div class="section">
+                    <h3>Address</h3>
+                    <label>Complete Mailing Address</label>
+                    <div class="address-input">
+                        <input type="text" id="houseNumber" placeholder="House No." required>
+                        <input type="text" id="street" placeholder="Street" required>
+                    </div>
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="state" placeholder="State" required>
+                    <input type="text" id="zip" placeholder="Postal / Zip Code" required>
+                </div>
+
+                <!-- Section 3: Password -->
+                <div class="section">
+                    <h3>Password</h3>
+                    <label>Password</label>
+                    <input type="password" id="password" required>
+
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+
+                <!-- Section 4: Preferences -->
+                <div class="section">
+                    <h3>Preferences</h3>
+                    <div class="checkbox-group">
+                        <label for="newsUpdates">Receive News Updates <input type="checkbox" id="newsUpdates"></label>
+                        <label for="offers">Receive Special Offers <input type="checkbox" id="offers"></label>
+                        <label for="notifications">Enable Notifications <input type="checkbox" id="notifications"></label>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Buttons centered at bottom -->
+            <div class="form-buttons">
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+            
+    
+    
+    <div id="popup" class="popup">
+        <p id="popupMessage"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <div id="footer-container"></div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Hero Section Styles */
+.hero {
+    background: #a7cfe9;
+    padding: 4rem 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Left Side Content */
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-button {
+    background: #43b0f1;
+    color: #fff;
+    padding: 0.9rem 1.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background: #057dcd;
+    transform: scale(1.05);
+}
+
+/* Right Side Image */
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .hero-image img {
+        max-width: 70%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Features Section Styles */
+.services {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}

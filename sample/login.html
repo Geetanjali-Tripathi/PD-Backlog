@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/navbarfooterstyles.css">
+    <script defer src="Java Scripts/login.js"></script>
+    <script src="Java Scripts/navbarfooterscripts.js"></script> 
+    <script src="Java Scripts/navbar.js"></script> 
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="container">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label>Unique ID:</label>
+            <input type="text" id="loginId" required>
+            
+            <label>Password:</label>
+            <input type="password" id="loginPassword" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="loginPopup" class="popup">
+        <p id="loginPopupMessage"></p>
+        <button onclick="closeLoginPopup()">Close</button>
+    </div>
+    <div id="footer-container"></div>
+</body>
+</html>
